@@ -1,12 +1,9 @@
 <?php
 
-require 'functions.php';
+$query = require_once 'bootstrap.php';
+
 require 'Task.php';
 
-$pdo = connectToDB();
-$statement = $pdo->prepare('SELECT * FROM tasks');
-$statement->execute();
-
-$results = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+$results = $query->selectAll('tasks');
 
 require 'index.view.php';
