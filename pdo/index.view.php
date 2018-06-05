@@ -9,7 +9,7 @@
 <body>
     <h2>Lista de Tarefas (PDO):</h2>
     <ul>
-        <?php foreach ($results as $task) : ?>
+        <?php foreach ($tasks as $task) : ?>
             <li>
                 <?php if ($task->completa) : ?>
                     <strike><?= $task->descricao ?></strike>

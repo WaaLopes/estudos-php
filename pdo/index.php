@@ -1,9 +1,9 @@
 <?php
 
-$query = require_once 'bootstrap.php';
+$database = require_once 'bootstrap.php';
 
 require 'Task.php';
 
-$results = $query->selectAll('tasks');
+$tasks = $database->selectAll('tasks', 'Task');
 
 require 'index.view.php';
