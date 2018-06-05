@@ -1,9 +1,8 @@
 <?php
 
-$database = require_once 'bootstrap.php';
+$database = require_once 'core/bootstrap.php';
 
-require 'Task.php';
+$uri = Request::uri();
 
-$tasks = $database->selectAll('tasks', 'Task');
-
-require 'index.view.php';
+require Router::load('routes.php')
+    ->direct($uri);

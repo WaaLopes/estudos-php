@@ -7,6 +7,14 @@
     <title>PDO</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="sobre">Sobre mim</a></li>
+            <li><a href="sobre/cultura">Sobre a cultura</a></li>
+            <li><a href="contato">Contato</a></li>
+        </ul>
+    </nav>
+
     <h2>Lista de Tarefas (PDO):</h2>
     <ul>
         <?php foreach ($tasks as $task) : ?>
