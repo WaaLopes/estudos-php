@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sobre a Cultura</title>
-</head>
-<body>
-    <h2>Sobre a Cultura</h2>
-</body>
-</html>
+<?php require ('partials/header.php') ?>
+
+<h2>Sobre a Cultura</h2>
+
+<?php require ('partials/footer.php') ?>
