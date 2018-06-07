@@ -14,4 +14,8 @@ class QueryBuilder {
 
         return $statement->fetchAll(PDO::FETCH_CLASS, $class);
     }
+
+    public function getPDO() {
+        return $this->pdo;
+    }
 }
